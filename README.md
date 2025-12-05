@@ -1,163 +1,184 @@
-📊 Customer Shopping Behavior – End-to-End Data Analytics Project
-1. Overview
+# 📊 Customer Shopping Behavior – End-to-End Data Analytics Project
 
-This project demonstrates a complete data analytics workflow using Python, SQL, and Power BI.
+## **1. Overview**
+This project demonstrates a complete data analytics workflow using Python, SQL, and Power BI.  
 The goal is to analyze customer shopping behavior, identify patterns, and derive actionable business insights.
 
 The workflow includes:
+- **Data Loading**
+- **Exploratory Data Analysis (EDA)**
+- **Data Cleaning**
+- **Feature Engineering**
+- **SQL-Based Analysis**
+- **Power BI Dashboard Creation**
+- **Final Reporting and Gamma Presentation**
 
-Data loading
+This project showcases practical skills relevant for **Data Analyst** and **Business Analyst** roles.
 
-Exploratory Data Analysis (EDA)
+---
 
-Data cleaning
+## **2. Dataset**
+- **Raw File:** `customer_shopping_behavior.csv`  
+- **Processed File:** `updated_customer_trends.csv`  
 
-Feature engineering
+**Description:**  
+Dataset contains detailed customer demographics, purchase patterns, review ratings, category preferences, discount usage, and shipping types.
 
-SQL-based analysis
+**Key Columns Include:**
+- age, gender  
+- item_purchased, category  
+- purchase_amount  
+- discount_applied, frequency_of_purchases  
+- review_rating  
+- subscription_status  
+- previous_purchases  
 
-Power BI dashboard creation
+---
 
-Final reporting and presentation using Gamma
+## **3. Tools & Technologies**
 
-This project showcases practical skills relevant for Data Analyst and Business Analyst roles.
+### **Languages & Libraries**
+- Python: Pandas, NumPy, SQLAlchemy, PyMySQL  
+- SQL: MySQL (compatible with PostgreSQL / SQL Server)
 
-2. Dataset
+### **Analytics & Visualization**
+- Power BI  
+- Gamma (for presentations)
 
-Raw File: customer_shopping_behavior.csv
+### **Environment**
+- Jupyter Notebook / VS Code  
+- MySQL Workbench  
+- GitHub  
 
-Processed File: updated_customer_trends.csv
+---
 
-Description:
-Contains detailed information about customer demographics, purchases, product categories, discounts, review ratings, and purchase frequency.
+## **4. Project Workflow**
 
-Key Columns Include:
+### **Step 1: Data Loading**
+- Loaded the dataset using Pandas  
+- Performed structure checks and missing value analysis  
 
-age, gender
+### **Step 2: Exploratory Data Analysis (EDA)**
+- Summary statistics  
+- Data distribution analysis  
+- Category and demographic insights  
+- Discount vs. purchase behavior  
+- Review rating patterns  
 
-item_purchased, category
+### **Step 3: Data Cleaning**
+- Imputed missing `review_rating` using **category-wise median**  
+- Standardized column names (snake_case)  
+- Renamed technical fields  
+- Removed irrelevant column: `promo_code_used`  
+- Ensured consistent data formats  
 
-purchase_amount
+### **Step 4: Feature Engineering**
+- **Created Age Groups** (Young Adult, Adult, Middle-aged, Senior)  
+- **Converted Frequency-of-Purchases** text into numerical days  
+- Validated discount/promo relationships  
+- Exported cleaned dataset to CSV  
 
-discount_applied, frequency_of_purchases
+### **Step 5: SQL Analytics**
+Executed SQL queries from:  
+📄 `customer_behavior_sql_queries.sql`
 
-review_rating
+Insights include:
+- Revenue comparison by gender  
+- Discount users who spent above average  
+- Top 5 products by average review rating  
+- Standard vs Express shipping insights  
+- Subscribed vs non-subscribed spending  
+- Discount rate per product  
+- Customer segmentation: New / Returning / Loyal  
+- Top products within each category  
+- Repeat buyer subscription likelihood  
+- Age-group revenue contribution  
 
-subscription_status
+### **Step 6: Power BI Dashboard**
+Power BI file: `customer_behaviour.pbix`
 
-previous_purchases
+Dashboard includes:
+- KPI Cards  
+- Category & product insights  
+- Age-group performance  
+- Purchase trends  
+- Subscription impact  
+- Review & discount trends  
+- Interactive filters & slicers  
 
-3. Tools & Technologies
-Languages & Libraries
+### **Step 7: Final Reporting**
+- Insight summary report  
+- Business recommendations  
+- Final Gamma presentation  
 
-Python: Pandas, NumPy, SQLAlchemy, PyMySQL
+---
 
-SQL: MySQL (compatible with PostgreSQL / SQL Server)
+## **5. Key Insights**  
+(*Replace these with your actual results.*)
 
-Analytics & Visualization
+- Middle-aged customers generate the highest revenue.  
+- Express shipping users spend more on average.  
+- Electronics category has the highest review ratings.  
+- Loyal customers contribute the largest revenue share.  
+- Discount usage strongly influences purchase frequency.  
 
-Power BI
+---
 
-Gamma (for presentations)
+## **6. Project Structure**
+```
+|── customer_trends.py
+|── customer_behavior_sql_queries.sql
+|── customer_behaviour.pbix
+|── customer_shopping_behavior.csv
+|── updated_customer_trends.csv
+|── reports/
+|── README.md
+```
 
-Environment
+---
 
-Jupyter Notebook / VS Code
+## **7. How to Run This Project**
 
-MySQL Workbench
+### **Install Dependencies**
+```bash
+pip install pandas numpy sqlalchemy pymysql
+```
 
-GitHub
+### **Run Python Script**
+```bash
+python customer_trends.py
+```
 
-4. Project Workflow
-Step 1: Data Loading
-
-Loaded the dataset using Pandas.
-
-Checked structure, data types, and missing values.
-
-Step 2: Exploratory Data Analysis (EDA)
-
-Summary statistics
-
-Missing value inspection
-
-Category/age/gender-level behavior
-
-Purchase amount distribution
-
-Discount & review rating analysis
-
-Step 3: Data Cleaning
-
-Imputed missing review_rating using median grouped by category
-
-Standardized all column names
-
-Renamed technical fields
-
-Removed unnecessary columns (promo_code_used)
-
-Ensured accurate data types
-
-Step 4: Feature Engineering
-
-Created age groups using qcut
-
-Converted purchase frequency text → numerical days
-
-Validated discount/promo fields
-
-Exported cleaned dataset
-
-Step 5: SQL Analytics
-
-Executed SQL queries from:
+### **Load SQL Queries**
+Import cleaned dataset into MySQL, then run:
+```
 customer_behavior_sql_queries.sql
+```
 
-SQL insights include:
+### **View Power BI Dashboard**
+Open:
+```
+customer_behaviour.pbix
+```
 
-Gender-based revenue comparison
+### **View Reports**
+Open final report & Gamma presentation in the `reports/` folder.
 
-High spenders who used discounts
+---
 
-Top 5 products by average review rating
+## **8. Deliverables**
+- ✔ Cleaned and transformed dataset  
+- ✔ SQL analytics file  
+- ✔ Power BI dashboard  
+- ✔ Python data processing script  
+- ✔ Final insights report  
+- ✔ Gamma presentation  
 
-Standard vs Express shipping comparison
+---
 
-Subscribed vs non-subscribed average spend
+If you'd like, I can also:
+- Add **badges** (Python, SQL, Power BI)  
+- Add **screenshots** for a more attractive GitHub README  
+- Create a **shorter resume version** of this project  
 
-Product discount rate analysis
-
-Customer segmentation: New, Returning, Loyal
-
-Top products per category
-
-Repeat buyer subscription patterns
-
-Revenue contribution by age groups
-
-Step 6: Power BI Dashboard
-
-Used customer_behaviour.pbix to build:
-
-KPI cards
-
-Purchase trends
-
-Category performance
-
-Age group revenue patterns
-
-Subscription impact
-
-Discounts & review rating insights
-
-Interactive slicers and filters
-
-Step 7: Final Reporting
-
-Insight summary report
-
-Business recommendations
-
-Final presentation created using Gamma
+Just tell me!  
