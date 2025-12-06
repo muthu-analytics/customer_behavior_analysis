@@ -114,7 +114,7 @@ Dashboard includes:
 ---
 
 ## **5. Key Insights**  
-`dashboard-customer_behaviour.png`
+`[dashboard-customer_behaviour.png](https://github.com/muthu-analytics/customer_behavior_analysis/blob/main/dashboard-customer_behaviour.png)`
 
 - Middle-aged customers generate the highest revenue.  
 - Express shipping users spend more on average.  
