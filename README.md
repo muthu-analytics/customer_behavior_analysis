@@ -174,11 +174,4 @@ Open final report & Gamma presentation in the `reports/` folder.
 - ✔ Final insights report  
 - ✔ Gamma presentation  
 
----
 
-If you'd like, I can also:
-- Add **badges** (Python, SQL, Power BI)  
-- Add **screenshots** for a more attractive GitHub README  
-- Create a **shorter resume version** of this project  
-
-Just tell me!  
