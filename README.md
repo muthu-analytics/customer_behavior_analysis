@@ -114,7 +114,7 @@ Dashboard includes:
 ---
 
 ## **5. Key Insights**  
-(*Replace these with your actual results.*)
+`dashboard-customer_behaviour.png`
 
 - Middle-aged customers generate the highest revenue.  
 - Express shipping users spend more on average.  
