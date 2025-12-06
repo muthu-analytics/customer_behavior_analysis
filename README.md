@@ -161,11 +161,6 @@ Open:
 customer_behaviour.pbix
 ```
 
-### **View Reports**
-Open final report & Gamma presentation in the `reports/` folder.
-
----
-
 ## **8. Deliverables**
 - ✔ Cleaned and transformed dataset  
 - ✔ SQL analytics file  
